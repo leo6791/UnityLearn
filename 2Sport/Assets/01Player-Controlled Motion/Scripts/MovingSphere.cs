@@ -43,7 +43,7 @@ public class MovingSphere : MonoBehaviour
         Vector3 displacement = velocity * Time.deltaTime;
         //相对运动，如果每次都将displacement赋值给 transform.localPosition，那么就只能在一个范围内移动
         Vector3 newPos = transform.localPosition + displacement;
-        //限制小球无法逃脱平面的范围,并增加反弹
+        //限制小球无法逃脱平面的范围,并增加反弹（模拟物理引擎效果）
         if (newPos.x < allowedArea.xMin)
         {
             newPos.x = allowedArea.xMin;
