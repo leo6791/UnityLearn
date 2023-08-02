@@ -136,6 +136,7 @@ namespace EditorExtension
         static void AddComponent2GameObject()
         {
             Debug.Log("DidReloadScripts");
+            //EditorPrefs是类似PlayerPrefs的数据保存方式，适用编辑器模式，PlayPrefs适用运行时
             string generateClassName = EditorPrefs.GetString("GENERATE_CLASS_NAME");
             Debug.Log(generateClassName);
 
