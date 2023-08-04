@@ -7,7 +7,7 @@ namespace SikiEdu
 	{
 		void Start()
 		{
-			// Code Here u阿富汗阿斯蒂芬sf
+			// Code Here
 		}
 	}
 }

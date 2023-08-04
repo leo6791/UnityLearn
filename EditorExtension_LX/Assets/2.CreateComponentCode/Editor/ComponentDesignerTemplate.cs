@@ -12,7 +12,7 @@ namespace EditorExtension
             
             var scriptFile = scriptsFolder + $"/{name}.Designer.cs";
             var writer = File.CreateText(scriptFile);
-            
+            //增加GUId，可以手动重新编译生成代码，如果不加，因为代码没有变化就不会再次编译
             writer.WriteLine($"// Generate Id:{Guid.NewGuid().ToString()}");
             writer.WriteLine("using UnityEngine;");
             writer.WriteLine();

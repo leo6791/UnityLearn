@@ -1,4 +1,4 @@
-// Generate Id:9ab1ab25-6c0b-4690-8b77-57f01eaa596b
+// Generate Id:33cb3b13-7e64-4fa2-abc9-f12d3959e9be
 using UnityEngine;
 
 namespace SikiEdu
