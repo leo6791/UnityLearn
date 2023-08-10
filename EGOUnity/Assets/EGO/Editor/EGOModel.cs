@@ -51,6 +51,21 @@ namespace EGO
     {
         public string Content = String.Empty;
         public bool Finished = false;
+
+        public bool FinishedValue
+        {
+            get => Finished;
+            set
+            {
+                if (value != Finished)
+                {
+                    FinishedChaged = true;
+                    Finished = value;
+                }
+            }
+        }
+
+        public bool FinishedChaged { get; set; }
     }
 }
 
